@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/openJFX/win/lib/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openJFX/win/lib/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openJFX/win/lib/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openJFX/win/lib/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openJFX/win/lib/javafx.web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openJFX/win/lib/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openJFX/win/lib/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openJFX/win/lib/src.zip!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openJFX/win/lib/javafx.base.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
