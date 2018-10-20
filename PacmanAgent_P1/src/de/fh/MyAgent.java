@@ -1,6 +1,7 @@
 package de.fh;
 
 import de.fh.agent.PacmanAgent;
+import de.fh.pacman.Pacman;
 import de.fh.pacman.PacmanPercept;
 import de.fh.pacman.enums.PacmanAction;
 import de.fh.pacman.enums.PacmanActionEffect;
@@ -110,7 +111,6 @@ public class MyAgent extends PacmanAgent {
         }
         System.out.println("-------------------------------");
 
-
 	}
 
     /**
@@ -145,10 +145,40 @@ public class MyAgent extends PacmanAgent {
     	/**
          * TODO [1]: Erweitern Sie diese action-Methode gemäß der Aufgabenstellung
          */
-
         if(actionEffect == PacmanActionEffect.GAME_INITIALIZED) {
             //Erster Aufruf
             nextAction = PacmanAction.GO_EAST;
+        }
+
+        if (actionEffect == PacmanActionEffect.BUMPED_INTO_WALL)
+        {
+            System.out.println("hallo");
+            switch (nextAction)
+            {
+                case GO_EAST:
+                {
+                    nextAction = PacmanAction.GO_SOUTH;
+                    break;
+                }
+
+                case GO_SOUTH:
+                {
+                    nextAction = PacmanAction.GO_WEST;
+                    break;
+                }
+
+                case GO_WEST:
+                {
+                    nextAction = PacmanAction.GO_NORTH;
+                    break;
+                }
+
+                case GO_NORTH:
+                {
+                    nextAction = PacmanAction.GO_EAST;
+                    break;
+                }
+            }
         }
 
         return nextAction;
