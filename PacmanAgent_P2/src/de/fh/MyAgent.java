@@ -21,7 +21,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public class MyAgent extends PacmanAgent {
 
-
     Suchstrategie suchstrategie = Suchstrategie.ASTERN;
 
     PacmanPercept percept;

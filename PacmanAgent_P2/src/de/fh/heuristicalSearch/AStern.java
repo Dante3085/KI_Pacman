@@ -24,7 +24,7 @@ public class AStern extends HeuristicSearch{
 
         float schaetzwert = 0f, pfadkosten = 0f;
 
-        //TODO AStern
+        // TODO AStern
 
         int numDots = 0;
         PacmanTileType[][] view = expansionsKandidat.getView();

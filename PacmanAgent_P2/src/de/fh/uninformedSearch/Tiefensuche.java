@@ -30,5 +30,8 @@ public class Tiefensuche extends UninformedSearch{
         }
         System.out.println("-------------------------------------------");
         openList.add(0,expansionsKandidat);
+
+        System.out.println("openList.size(): " + openList.size());
+        System.out.println("closedList.size(): " + closedList.size());
     }
 }

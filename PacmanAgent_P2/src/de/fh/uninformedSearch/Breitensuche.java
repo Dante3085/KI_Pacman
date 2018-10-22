@@ -19,7 +19,9 @@ public class Breitensuche extends UninformedSearch{
     @Override
     public void fuegeKnotenEin(Knoten expansionsKandidat) {
 
-        //TODO Breitensuche
+        // TODO Breitensuche
+
+        System.out.println("test");
 
         //Implementiert openList.add(Index,exp), mit dem richtigen Index gemäß Suchstrategie
         openList.add(openList.size(), expansionsKandidat);
