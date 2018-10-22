@@ -21,6 +21,14 @@ public class Tiefensuche extends UninformedSearch{
 
         //TODO Tiefensuche (Beispiel)
         //Implementiert openList.add(Index,exp), mit dem richtigen Index gemäß Suchstrategie
+
+        for(int i = 0; i < expansionsKandidat.getView().length; i++ ) {
+            for (int j = 0; j < expansionsKandidat.getView()[i].length; j++) {
+                System.out.print(expansionsKandidat.getView()[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println("-------------------------------------------");
         openList.add(0,expansionsKandidat);
     }
 }

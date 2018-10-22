@@ -22,7 +22,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class MyAgent extends PacmanAgent {
 
 
-    Suchstrategie suchstrategie = Suchstrategie.DIJKSTAR;
+    Suchstrategie suchstrategie = Suchstrategie.ASTERN;
 
     PacmanPercept percept;
     PacmanActionEffect actionEffect;
@@ -113,7 +113,7 @@ public class MyAgent extends PacmanAgent {
 
         //Gebe den aktuellen Zustand der Welt aus
         String view_row = "";
-        System.out.println("viewsize: " + view.length + "*" + view[0].length);
+/*        System.out.println("viewsize: " + view.length + "*" + view[0].length);
         for (int x = 0; x < view[0].length; x++) {
             for (int y = 0; y < view.length; y++) {
                 view_row += " " + view[y][x];
@@ -121,7 +121,7 @@ public class MyAgent extends PacmanAgent {
             System.out.println(view_row);
             view_row = "";
         }
-        System.out.println("-------------------------------");
+        System.out.println("-------------------------------");*/
 
 	}
 

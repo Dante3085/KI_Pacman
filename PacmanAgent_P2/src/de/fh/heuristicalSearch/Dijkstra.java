@@ -1,7 +1,9 @@
 package de.fh.heuristicalSearch;
 
 import de.fh.pacman.PacmanPercept;
+import de.fh.pacman.enums.PacmanTileType;
 import de.fh.suche.Knoten;
+import de.fh.util.Vector2;
 
 import java.util.Comparator;
 
@@ -24,9 +26,14 @@ public class Dijkstra extends HeuristicSearch{
         float schaetzwert = 0f, pfadkosten = 0f;
 
         Knoten zeiger = expansionsKandidat.getVorgaenger();
+        Vector2 pos = zeiger.getPos();
         while(zeiger != null)
         {
-            pfadkosten++;
+            int x = pos.getX();
+            int y = pos.getY();
+            if(zeiger.getView()[x][y] == PacmanTileType.EMPTY)
+                pfadkosten++;
+
             zeiger = zeiger.getVorgaenger();
         }
 
