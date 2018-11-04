@@ -26,12 +26,6 @@ public class Bestensuche extends HeuristicSearch{
 
         //TODO Bestensuche
 
-        //setzt die bisherigen Pfadkosten zu dem Knoten
-        expansionsKandidat.setPfadkosten(pfadkosten);
-        //Setzt den richtigen Schätzwert für den Knoten
-        expansionsKandidat.setSchaetzwert(schaetzwert);
-
-
         int numDots = 0;
         PacmanTileType[][] view = expansionsKandidat.getView();
         for (int i = 0; i < view.length; i++)
@@ -40,6 +34,10 @@ public class Bestensuche extends HeuristicSearch{
                     numDots++;
 
         schaetzwert = numDots;
+        //setzt die bisherigen Pfadkosten zu dem Knoten
+        expansionsKandidat.setPfadkosten(pfadkosten);
+        //Setzt den richtigen Schätzwert für den Knoten
+        expansionsKandidat.setSchaetzwert(schaetzwert);
     }
 
 
