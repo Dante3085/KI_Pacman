@@ -47,12 +47,17 @@ public class AStern extends HeuristicSearch{
             zeiger = zeiger.getVorgaenger();
         }
 
+        /*Knoten pointer = expansionsKandidat.getVorgaenger();
+        while (pointer != null)
+        {
+            pfadkosten++;
+            pointer = pointer.getVorgaenger();
+        }*/
+
         //setzt die bisherigen Pfadkosten zu dem Knoten
         expansionsKandidat.setPfadkosten(pfadkosten);
         //Setzt den richtigen Schätzwert für den Knoten
         expansionsKandidat.setSchaetzwert(schaetzwert);
-
-
     }
 
 
@@ -76,8 +81,5 @@ public class AStern extends HeuristicSearch{
                 return Float.compare(o1.getBewertung(), o2.getBewertung());
             }
         });
-
     }
-
-
 }

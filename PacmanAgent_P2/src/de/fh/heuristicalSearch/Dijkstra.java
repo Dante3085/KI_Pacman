@@ -37,6 +37,13 @@ public class Dijkstra extends HeuristicSearch{
             zeiger = zeiger.getVorgaenger();
         }
 
+        /*Knoten pointer = expansionsKandidat.getVorgaenger();
+        while (pointer != null)
+        {
+            pfadkosten++;
+            pointer = pointer.getVorgaenger();
+        }*/
+
         //TODO Dijkstra
 
         //setzt die bisherigen Pfadkosten zu dem Knoten
